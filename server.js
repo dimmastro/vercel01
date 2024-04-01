@@ -47,10 +47,10 @@ const runAll = async (factoryAddress, rpcEndpoint, connectionName) => {
             }
         );
 
-        const price = await client.queryContractSmart(marketAddress, {
-            spot_price: {},
-        });
-        console.log(JSON.stringify(price));
+        // const price = await client.queryContractSmart(marketAddress, {
+        //     spot_price: {},
+        // });
+        // console.log(JSON.stringify(price));
 
         const status = await client.queryContractSmart(marketAddress, { status: {} });
 
@@ -87,9 +87,12 @@ const runAll = async (factoryAddress, rpcEndpoint, connectionName) => {
             per7: (per7),
             per30: (per30),
 
-            price_usd: (price["price_usd"]),
-            price_notional: (price["price_notional"]),
-            price_base: (price["price_base"]),
+            // price_usd: (price["price_usd"]),
+            // price_notional: (price["price_notional"]),
+            // price_base: (price["price_base"]),
+            price_usd: 0,
+            price_notional: 0,
+            price_base: 0,
 
             borrow_fee: (status["borrow_fee"]*10000)/10000,
             instant_delta_neutrality_fee_value: (status["instant_delta_neutrality_fee_value"]*10000)/10000,
