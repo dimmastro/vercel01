@@ -18,7 +18,7 @@ const connections_test = {
     }
 };
 const connections = {
-    injective:{
+    inj:{
         factoryAddress: "inj1vdu3s39dl8t5l88tyqwuhzklsx9587adv8cnn9",
         rpcEndpoint: "https://sentry.tm.injective.network:443"
         // rpcEndpoint: "https://injective-rpc.publicnode.com:443"
